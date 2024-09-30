@@ -1,0 +1,639 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensures nav and logo are at opposite ends */
+    align-items: center;
+    border-bottom: solid 1px white;
+    background-color: #FF6450;
+    padding: 0 2.5rem; /* Adding 2.5rem padding to both sides */
+    height: 4rem;
+    box-sizing: border-box; 
+    z-index: 1000;
+}
+
+/* Logo */
+header .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.17rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header .logo span {
+    color: #50EBFF;
+    padding: 0 0.17rem;
+}
+
+/* Navigation styles */
+header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav li {
+    padding-right: 1.5rem;
+}
+
+nav a {
+    line-height: 2.5rem;
+    font-size: 1rem;
+    color: white;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        padding: 0 1rem;
+    }
+
+    header .logo {
+        font-size: 1rem;
+        letter-spacing: 0.10rem;
+    }
+
+    nav li {
+        padding-right: 1rem;
+    }
+  }
+  
+@media only screen and (max-width: 480px) {
+
+    header {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+
+    header .logo {
+        font-size: 0.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    nav li {
+        padding-right: 0.4rem;
+    }
+
+    nav a {
+        line-height: 1rem;
+        font-size: 0.7rem;
+    }
+  }
+  
+
+/* Hero Section */
+
+.hero-section {
+    box-sizing: border-box;
+    display: flex;
+    height: 75vh;
+    padding-top: 4rem;
+    background-image: url(.//Images/ben-hershey-ChI4eUGTpeY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.banner {
+    position:relative;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2.5rem 2rem;
+    color: white;
+}
+
+.text {
+    width: 34rem;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.text span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.hero-section .button {
+    margin-top: 1.625rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #FF6450;
+    color: white;
+    border-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .banner {
+        width: 100vw;
+        padding: 2rem 1rem;
+    }
+    
+    .text {
+        width: 100%;
+    }
+    
+    .text h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .text span {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .hero-section .button {
+        margin: 1.5rem 0;
+        padding: 0.8rem 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .hero-section {
+        height: 55vh;
+    }
+
+    .banner {
+        width: 100vw;
+        padding: 1rem 0.6rem;
+    }
+    
+    .text h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .text span {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    
+    .hero-section .button {
+        font-size: 0.8rem;
+        margin: 1.5rem 0;
+        padding: 0.8rem 1.5rem;
+    }
+
+}
+
+/* Summary Section */
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center;  
+    height: fit-content;
+    background-color:#FF6450;
+    color: white;
+    justify-items: center;
+}
+
+.summary .text {
+    width: 35rem;
+    padding: 3rem 0;
+}
+
+.summary h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 1px white;
+}
+
+.summary p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .summary .text {
+        width: 25rem;
+        padding: 2rem 0; 
+    }
+
+    .summary h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .summary p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .summary .text {
+        width: 90%;
+        padding: 1.5rem 0; 
+    }
+
+    .summary h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .summary p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* Photos Section */
+
+.photos {
+    display: flex;
+    justify-content: center;  
+    padding: 2rem 2.5rem;               
+    width: 100%;                     /* Ensures the container uses the full width */
+    box-sizing: border-box;
+    background-color: #FF6450;           /* Includes padding in the container's total width */
+}
+
+.photos img {
+    flex: 1;                         /* Images grow to fill the space equally */
+    margin: 0 1rem;                  /* Adds space between the images */
+    max-width: calc(33.33% - 1rem);  /* Each image takes roughly a third of the row width */
+    height: auto;
+    border-radius: 10px;             /* Optional: Adds rounded corners to the images */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .photos {
+        padding: 0 2rem;
+        justify-content: center;
+        flex-wrap: wrap;             
+    }
+    
+    .photos img {
+        width: 100%;
+        margin-bottom: 2rem;     
+        max-width: none;  
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .photos {
+        padding: 0 1rem;             
+    }
+    
+    .photos img {
+        margin-bottom: 1rem;       
+    }
+
+}
+
+/* Reviews Section */
+
+.review {
+    display: flex;
+    flex-direction: column;           
+    width: 100%;
+    height: fit-content;                     
+    box-sizing: border-box;
+    background-color: white;
+    padding: 3rem 0;         
+}
+
+.title-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-review h2 {
+    color: #FF6450;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #FF6450;
+}
+
+.title-review img {
+    padding-right: 1.5rem;
+    width: auto;
+    height: 4rem;
+}
+
+.review .text {
+    width: 45rem;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.review .text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: darkslategrey;
+}
+
+.review .text span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #FF6450;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .review {
+        padding: 2rem 0;
+    }
+
+    .title-review h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .title-review img {
+        padding-right: 1rem;
+        height: 3rem;
+    }
+
+    .review .text {
+        width: 20rem;
+    }
+
+    .review .text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .review .text span {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .review {
+        padding: 1.5rem 0;
+    }
+
+    .title-review h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+    }
+
+    .title-review img {
+        padding-right: 1rem;
+        height: 3rem;
+    }
+
+    .review .text {
+        width: 90%;
+    }
+
+    .review .text p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+    .review .text span {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+
+}
+
+/* Explore */
+
+.explore-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0;
+    align-items: center; 
+    width: 100%;
+    background-color: #FF6450;
+}
+
+.explore-section h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    border-bottom: solid 1px white;
+}
+
+
+.container-classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
+    gap: 2rem; 
+    width: 100%; 
+}
+
+.class {
+    flex: 0 0 calc(33.33% - 2.5rem); 
+    box-sizing: border-box; 
+    background-color: #f7f7f7; 
+    text-align: center; 
+    border-radius: .625rem;
+    flex-shrink: 3;
+}
+
+.class-content {
+    padding: 1.5rem;
+}
+
+.class-content h3 {
+    font-size: 1.5rem;
+    color: #FF6450;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #FF6450;
+}
+
+.class-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: darkslategrey;
+}
+
+.class-content button {
+    margin-top: 1.625rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #FF6450;
+    color: white;
+    border-color: transparent;
+}
+
+.class img {
+    width: 100%; 
+    height: auto; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .explore-section {
+        padding: 2rem 0;
+    }
+    
+    .explore-section h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .container-classes {
+        padding-top: 1rem;
+        gap: 2rem;  
+    }
+
+    .class {
+        flex: 0 0 calc(100% - 4rem);
+        box-sizing: border-box;
+    }
+
+    .class-content button {
+        margin: 1.5rem 0;
+        padding: 0.8rem 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .explore-section {
+        padding: 1.5rem 0;
+    }
+    
+    .explore-section h2 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .container-classes {
+        padding-top: 0.5rem;
+        gap: 1rem;  
+    }
+
+    .class {
+        flex: 0 0 calc(100% - 2rem); 
+        box-sizing: border-box;
+    }
+
+    .class-content p {
+        font-size: 0.8rem;
+    }
+
+    .class-content button {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Footer */
+
+.container-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensures nav and logo are at opposite ends */
+    align-items: center;
+    background-color: white;
+    padding: 0 2.5rem; /* Adding 2.5rem padding to both sides */
+    height: 3rem;
+    box-sizing: border-box; 
+}
+
+.container-footer span, a {
+    line-height: 2.5rem;
+    font-size: 1rem;
+    color: #FF6450;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container-footer strong {
+    font-weight: bold;
+    color: #50EBFF;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .container-footer {
+        padding: 0 1rem; 
+        height: 2rem;
+    }
+
+    .container-footer span, a {
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .container-footer {
+        padding: 0 0.5rem; 
+        height: 2rem;
+    }
+
+    .container-footer span, a {
+        line-height: 0.8rem;
+        font-size: 0.6rem;
+    }
+
+}
